@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #191d22;
+}
+
+nav {
+    position: relative;
+    margin: 270px auto;
+    width: 590px;
+    height: 50px;
+    background: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #9E77ED;
+    width: 100px;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+
+}
+a:nth-child(2) {
+    width: 110px;
+}
+
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+nav .start-services, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+
+}
+
+
+nav .start-portfolio, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+
+}
+a:nth-child(4) {
+    width: 160px;
+
+}
+
+nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
